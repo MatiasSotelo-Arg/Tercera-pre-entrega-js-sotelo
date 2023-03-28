@@ -80,6 +80,7 @@ function cerrarCarrito (carritoCard) {
 }
 
 function funcionalidadBtnCarrito () {
+    calcularTotalCarrito();
     productos.forEach(prod => {
         document.getElementById(`producto-${prod.id}`).addEventListener('click', () => {
             agregarProductoAlCarrito(prod);
